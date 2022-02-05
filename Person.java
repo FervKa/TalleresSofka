@@ -59,6 +59,25 @@ public class Person {
 
 
     /**
+     * Este es el constructor para Person. Recibe como parámetros todas las variables anteriormente mencionadas.
+     *
+     * @param name
+     * @param lastName1
+     * @param lastName2
+     * @param dateBirth
+     * @param height
+     */
+
+    public Person(String name, String lastName1, String lastName2, String dateBirth, float height) {
+        this.name = name;
+        this.lastName1 = lastName1;
+        this.lastName2 = lastName2;
+        this.dateBirth = dateBirth;
+        this.height = height;
+    }
+
+
+    /**
      * Inician los Getters y Setters, con los que se hará uso de las variables en diferentes objetos.
      */
 

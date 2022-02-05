@@ -1,8 +1,16 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class Fruit {
+
 
     public String name;
     private float averageWeight;
-    public String[] colors;
+    public int sizeArray;
+    public String[] colors = new String[sizeArray];
+
+
 
     public String getName() {
         return name;
@@ -25,6 +33,10 @@ public class Fruit {
     }
 
     public void setColors(String[] colors) {
+        this.sizeArray = sizeArray;
+        for(int i = 0;i<sizeArray;i++){
+            System.out.println("holi");
+        }
         this.colors = colors;
     }
 }
