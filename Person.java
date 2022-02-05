@@ -157,8 +157,8 @@ public class Person {
     public void setDateBirth(String dateBirth) throws ParseException {
         SimpleDateFormat format = new SimpleDateFormat("yyyy/MM/dd");
         Date dateBirth1 = format.parse(dateBirth);
-        String dateBirthParse = dateBirth1.toString();
-        this.dateBirth = dateBirthParse;
+        String dateBirthParsed = dateBirth1.toString();
+        this.dateBirth = dateBirthParsed;
     }
 
 
