@@ -1,19 +1,37 @@
-public class Person {
-    public string name;
+import java.util.Date;
+
+public class Person extends Date {
+
+
+    public String name;
     public String lastName1;
     public String lastName2;
     public Date dateBirth;
-    public float heigt;
+    public float height;
 
 
 
 
+    public Person(String name, String lastName1, String lastName2, Date dateBirth, float height) {
+        this.name = name;
+        this.lastName1 = lastName1;
+        this.lastName2 = lastName2;
+        this.dateBirth = dateBirth;
+        this.height = height;
+    }
 
-    public string getName() {
+
+
+
+    public Person() {
+
+    }
+
+    public String getName() {
         return name;
     }
 
-    public void setName(string name) {
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -37,15 +55,15 @@ public class Person {
         return dateBirth;
     }
 
-    public void setDateBirth(Date dateBirth) {
+    public void setDateBirth() {
         this.dateBirth = dateBirth;
     }
 
-    public float getHeigt() {
-        return heigt;
+    public float getHeight() {
+        return height;
     }
 
-    public void setHeigt(float heigt) {
-        this.heigt = heigt;
+    public void setHeight(float height) {
+        this.height = height;
     }
 }
