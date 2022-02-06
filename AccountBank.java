@@ -1,5 +1,7 @@
 /**
  * Se declara la clase AccountBank (que se refiere a la cuenta de banco de la persona)
+ *
+ * @author Stiven Suárez Marín. (FervKa)
  */
 
 

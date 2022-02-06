@@ -1,6 +1,6 @@
 /**
  * Esta clase abstrae aspectos que todas las personas tienen y las convierte en código.
- * @author Stiven Suárez Marín.
+ * @author Stiven Suárez Marín. (FervKa)
  */
 
 /**
