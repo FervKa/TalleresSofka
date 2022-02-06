@@ -77,11 +77,11 @@ public class Possessions {
 
     /**
      * Método constructor de la clase Possessions.
-     * 
-     * @param type
-     * @param color
-     * @param dateOfPurchase
-     * @param paymentMethod
+     * Recibe como argumentos los datos que el usuario ingresa al momento de crear el objeto.
+     * @param type: tipo de posesión.
+     * @param color: color de la posesión.
+     * @param dateOfPurchase: fecha de compra de la posesión.
+     * @param paymentMethod: método de pago con el cual hizo la compra de la posesión.
      */
     public Possessions(String type, String color, String dateOfPurchase, String paymentMethod) {
         this.type = type;
@@ -91,26 +91,51 @@ public class Possessions {
     }
 
 
+    /**
+     * Retorna el valor guardado en la variable, que hace referencia al tipo de posesión que tiene.
+     * @return
+     */
     public String getType() {
         return type;
     }
 
+    /**
+     * Guarda en la variable el tipo de posesión.
+     * @param type
+     */
     public void setType(String type) {
         this.type = type;
     }
 
+    /**
+     * Retorna el valor guardado del color de la posesión.
+     * @return
+     */
     public String getColor() {
         return color;
     }
 
+    /**
+     * Establece en la variable el dato del color de la posesión.
+     * @param color
+     */
     public void setColor(String color) {
         this.color = color;
     }
 
+    /**
+     * Devuelve el dato correspondiente a la fecha en que se hizo la compra de la posesión.
+     * @return
+     */
     public String getDateOfPurchase() {
         return dateOfPurchase;
     }
 
+    /**
+     * Establece la fecha de cuando fue adquirida la posesión.
+     * @param dateOfPurchase: Fecha de compra.
+     * @throws ParseException: captura los errores al intentar hacer el paseo de la fecha de String a Date.
+     */
     public void setDateOfPurchase(String dateOfPurchase) throws ParseException {
 
         SimpleDateFormat format = new SimpleDateFormat("yyyy/MM/dd");
@@ -120,10 +145,20 @@ public class Possessions {
         this.dateOfPurchase = dateOfPurchase;
     }
 
+
+    /**
+     * Devuelve el dato guardado en paymentMethod, que hace referencia al método de pago que se usó para adquirir
+     * el producto y/o posesión.
+     * @return
+     */
     public String getPaymentMethod() {
         return paymentMethod;
     }
 
+    /**
+     * Establece en la variable el método de pago para su posterior uso.
+     * @param paymentMethod: método de pago.
+     */
     public void setPaymentMethod(String paymentMethod) {
         this.paymentMethod = paymentMethod;
     }
