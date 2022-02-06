@@ -42,18 +42,47 @@ import java.util.Date;
 public class Possessions {
 
     /**
-     * En esta parte se encuentran las variables que serán usadas para 
+     * En esta parte se encuentran las variables que serán usadas para crear el objeto de clase Possessions.
      */
 
     /**
-     *
+     * La variable Type, será la que guardará el tipo de posesión adquirida, es decir: si es de tipo Carro, si es de tipo
+     * Moto, si es de tipo Computador, etc.
      */
     public String type;
+
+
+    /**
+     * La variable color, hace referencia al rayo de luz que refleja el objeto, (color), este es almacenado en la variable
+     * para su posterior utilización.
+     */
     public String color;
+
+
+    /**
+     * En esta variable se hará el guardado del dato de la fecha de compra del objeto que se habla.
+     */
     private String dateOfPurchase;
+
+    /**
+     * En esta variable, será almacenado el método de pago con el cual se hizo la compra el producto, tales como:
+     * - Tarjeta de Crédito (CRDT)
+     * - Pagos Seguros En línea (PSE)
+     * - Débito (DBT)
+     * - Efectivo (EFCTV)
+     * Entre otros.
+     */
     private String paymentMethod;
 
 
+    /**
+     * Método constructor de la clase Possessions.
+     * 
+     * @param type
+     * @param color
+     * @param dateOfPurchase
+     * @param paymentMethod
+     */
     public Possessions(String type, String color, String dateOfPurchase, String paymentMethod) {
         this.type = type;
         this.color = color;
