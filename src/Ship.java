@@ -6,15 +6,6 @@ public abstract class Ship{
     public float weight;
 
 
-    public Ship( String type, int motorsNumber, float size, float weight) {
-        this.type = "Shuttle";
-        this.motorsNumber = 0;
-        this.size = 0;
-        this.weight = 0;
-    }
-
-
-
     public String getType() {
         return type;
     }
@@ -48,8 +39,8 @@ public abstract class Ship{
     }
 
 
-
-    public abstract action();
-    public abstract takeOff();
+    public abstract void closeDoors();
+    public abstract void adjustTrajectory();
+    public abstract void cleanPropells();
 
 }
