@@ -1,24 +1,25 @@
-public class Shuttle extends Ship implements IPropellers{
+/**
+ * The type Manned.
+ */
+public class Manned extends Ship implements IPropellers{
 
 
-    public Shuttle(){
-        this.type = "Lanzadera";
-        this.motorsNumber = 3;
-        this.size = 1430;
-        this.weight = 2300;
-
+    public Manned(){
+        this.type = "Tripulada";
+        this.motorsNumber = 4;
+        this.size = 1500;
+        this.weight = 5900;
     }
 
 
-    //----------------------------------------
     @Override
     public void closeDoors() {
-        System.out.println("I'm closing the doors.");
+        System.out.println("The doors are close.");
     }
 
     @Override
     public void adjustTrajectory() {
-        System.out.println("I'm adjusting the trajectory.");
+        System.out.println("The trajectory is adjusted.");
     }
 
     @Override
@@ -27,7 +28,8 @@ public class Shuttle extends Ship implements IPropellers{
     }
 
 
-    //----------------------------------------
+
+
     @Override
     public void timeIgnite(int time) {
         System.out.println("The time to Ignite is: " + time);
@@ -35,7 +37,6 @@ public class Shuttle extends Ship implements IPropellers{
 
     @Override
     public void takeOff(int force) {
-
         System.out.println("The ship is taking off, with a force of: " + force);
     }
 
@@ -44,25 +45,35 @@ public class Shuttle extends Ship implements IPropellers{
         System.out.println("The ship is decelerating with a resistance of " + resistance + " gravitational");
     }
 
-    //----------------------------------------
 
-
-
-    public void fly(boolean fly){
-        System.out.println("The ship is flying: " + fly);
+    /**
+     * Manning.
+     *
+     * @param crew the crew
+     */
+    public void manning(boolean crew){
+        System.out.println("The ship is manning: " + crew);
     }
 
-    public void reviewControls(){
-        System.out.println("Review controls on");
+    /**
+     * Angle of inclination.
+     *
+     * @param angle the angle
+     */
+    public void angleOfInclination(int angle){
+        System.out.println("The angle of inclination is: " + angle );
     }
 
+    /**
+     * Print ship.
+     */
     public void printShip(){
         System.out.println("\nLa nave de Tipo No Tripulada fue creada con los siguientes parámetro prestablecidos:\n");
         takeOff(2);
         decelerete(3);
         cleanPropells(true);
-        fly(true);
-        reviewControls();
+        angleOfInclination(87);
+        manning(true);
         timeIgnite(150);
         System.out.println(
                 "Tipo de Nave: " + this.type+"\n" +
