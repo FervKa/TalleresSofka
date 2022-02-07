@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54a113be-3153-4be6-b125-09c942760664" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/intellij-javadocs-4.0.1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TalleresSofka/Unmanned.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Manned.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Turism.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TalleresSofka/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TalleresSofka/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TalleresSofka/Ship.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TalleresSofka/Ship.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TalleresSofka/Shuttle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TalleresSofka/Shuttle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IPropellers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IPropellers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Manned.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manned.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ship.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Shuttle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shuttle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Turism.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Turism.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Unmanned.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Unmanned.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

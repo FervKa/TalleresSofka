@@ -1,93 +1,93 @@
 /**
- * The type Ship.
+ * Clase abstracta Ship, haciendo referencia a un molde de naves con características similares.
  */
 public abstract class Ship{
 
     /**
-     * The Type.
+     * El tipo de nave, (Manned, Unmanned, Shuttle, Turism)
      */
     public String type;
     /**
-     * The Motors number.
+     * Hace referencia al número de motores que posee la nave.
      */
     public int motorsNumber;
     /**
-     * The Size.
+     * Se refiere al tamaño de la nave en cuestión, esta va en cm.
      */
     public float size;
     /**
-     * The Weight.
+     * Peso de la nave en Kg.
      */
     public float weight;
 
 
     /**
-     * Gets type.
+     * Retorna el valor guardado en Type.
      *
-     * @return the type
+     * @return : tipo.
      */
     public String getType() {
         return type;
     }
 
     /**
-     * Sets type.
+     * Establece el valor en la variable.
      *
-     * @param type the type
+     * @param type : El tipo.
      */
     public void setType(String type) {
         this.type = type;
     }
 
     /**
-     * Gets motors number.
+     * Retorna el valor guardado en motorsNumber.
      *
-     * @return the motors number
+     * @return : el número de motores.
      */
     public int getMotorsNumber() {
         return motorsNumber;
     }
 
     /**
-     * Sets motors number.
+     * Establece el valor en la variable motorsNumber.
      *
-     * @param motorsNumber the motors number
+     * @param motorsNumber : número de motores.
      */
     public void setMotorsNumber(int motorsNumber) {
         this.motorsNumber = motorsNumber;
     }
 
     /**
-     * Gets size.
+     * Retorna el valor guardado en size.
      *
-     * @return the size
+     * @return el tamaño.
      */
     public float getSize() {
         return size;
     }
 
     /**
-     * Sets size.
+     * Establece el valor en la variable size.
      *
-     * @param size the size
+     * @param size el tamaño.
      */
     public void setSize(float size) {
         this.size = size;
     }
 
     /**
-     * Gets weight.
+     * Retorna el valor guardado en weight.
      *
-     * @return the weight
+     * @return el peso.
      */
     public float getWeight() {
         return weight;
     }
 
     /**
-     * Sets weight.
+     * Establece el valor en la variable weight.
      *
-     * @param weight the weight
+     * @param weight : El peso.
      */
     public void setWeight(float weight) {
         this.weight = weight;
@@ -95,17 +95,18 @@ public abstract class Ship{
 
 
     /**
-     * Close doors.
+     * Función abstracta cerrar puertas.
      */
     public abstract void closeDoors();
 
     /**
-     * Adjust trajectory.
+     * Función abstracta ajustar trayectoría.
      */
     public abstract void adjustTrajectory();
 
     /**
-     * Clean propells.
+     * Función abstracta limpiar propulsores.
+     * Recibe como parámetro un dato booleano, para saber si sí (true) se limpian los propulsores o no (false)
      *
      * @param clean the clean
      */

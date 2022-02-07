@@ -1,65 +1,90 @@
 /**
- * The type Turism.
+ * Hace referncia a la nave de tipo Turismo.
+ *
+ *
+ * @autor Stiven Suárez Marín
  */
 public class Turism extends Ship implements IPropellers {
 
     /**
-     * The Number of persons.
+     * Número de personas capaces de albergar la nave.
      */
     public int numberOfPersons;
     /**
-     * The Cost of seating.
+     * Costo de los asientos en la nave.
      */
     public float costOfSeating;
 
 
     /**
-     * Gets number of persons.
+     * Inicialización de la clase Turismo heredada de Ship.
+     */
+    public Turism(){
+        this.type = "Turismo";
+        this.motorsNumber = 6;
+        this.size = 1500;
+        this.weight = 4000;
+    }
+
+
+    /**
+     * Getters y Setters de los atributos de esta nave.
      *
-     * @return the number of persons
+     * @return número de personas.
      */
     public int getNumberOfPersons() {
         return numberOfPersons;
     }
 
     /**
-     * Sets number of persons.
+     * Establece el número de personas en la variable numberOfPersons
      *
-     * @param numberOfPersons the number of persons
+     * @param numberOfPersons número de personas.
      */
     public void setNumberOfPersons(int numberOfPersons) {
         this.numberOfPersons = numberOfPersons;
     }
 
     /**
-     * Gets cost of seating.
+     * Retorna el valor guardado en el costo de los asientos.
      *
-     * @return the cost of seating
+     * @return el costo de los asientos.
      */
     public float getCostOfSeating() {
         return costOfSeating;
     }
 
     /**
-     * Sets cost of seating.
+     * Establece el valor de los asientos en la variable costOfSeating
      *
-     * @param costOfSeating the cost of seating
+     * @param costOfSeating
      */
     public void setCostOfSeating(float costOfSeating) {
         this.costOfSeating = costOfSeating;
     }
+
+
+    /**
+     * @param time: Referencia a tiempo en segundos.
+     */
 
     @Override
     public void timeIgnite(int time) {
         System.out.println("The time to Ignite is: " + time);
     }
 
+    /**
+     * @param force: Referencia a la fuerza con la que arrancan los propulsores.
+     */
     @Override
     public void takeOff(int force) {
 
         System.out.println("The ship is taking off, with a force of: " + force);
     }
 
+    /**
+     * @param resistance: Se recibe como parámetro para saber la resistencia con la que el propulsor está desacelerando.
+     */
     @Override
     public void decelerete(int resistance) {
         System.out.println("The ship is decelerating with a resistance of " + resistance + " gravitational");
@@ -67,7 +92,9 @@ public class Turism extends Ship implements IPropellers {
 
 
 
-    //---------------------------------------------
+    /**
+     * Estas son funciones abstractas que la clase abstracta da, (Ship)
+     */
     @Override
     public void closeDoors() {
         System.out.println("I'm closing the doors.");
@@ -82,28 +109,30 @@ public class Turism extends Ship implements IPropellers {
     public void cleanPropells(boolean clean) {
         System.out.println("Cleaning Propells: " + clean);
     }
+    /**
+     * Finalizan las funciones abstractas.
+     */
 
 
     /**
-     * Count.
      *
-     * @param numberOfPersons the number of persons
+     * @param numberOfPersons número de personas capaces de albergar la nave.
      */
     public void count(int numberOfPersons){
         System.out.println("The number of people is: " + numberOfPersons);
     }
 
     /**
-     * Cost seating.
+     * Costo de los asientos en la nave.
      *
-     * @param cost the cost
+     * @param cost: costo
      */
     public void costSeating(float cost){
         System.out.println("The cost of seating is: " + cost);
     }
 
     /**
-     * Print ship.
+     * Imprime los datos que se encuentran
      */
     public void printShip(){
         System.out.println("\nLa nave de Tipo No Tripulada fue creada con los siguientes parámetro prestablecidos:\n");
