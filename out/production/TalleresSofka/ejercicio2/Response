@@ -1,0 +1,7 @@
+Respuesta del ejercicio 2 - Taller 4
+
+
+R//: Sí, es posible tener un programa en java que contiene varias clases con métodos Main.
+Puesto que Java es un lenguaje orientado a objetos, por lo que todo el procesamiento se realiza a cabo en sus clases.
+Esto es posible gracias a que inicialmente el archivo se ejecuta como estático y void, llegado el caso se implementara
+para que retornara algo, este lanzaría un error de valor inesperado.
