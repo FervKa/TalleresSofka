@@ -1,31 +1,46 @@
 package ejercicio4;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.Scanner;
 
 public class Vehicle {
 
     public static ArrayList<Vehicle> listVehicles = new ArrayList<>();
-    private int numeroDePasajeros;
-    private boolean hayTripulacion = false;
-    private int numeroRuedas;
-    private String fechaMatriclua;
-    private String medioDeDesplazamiento;
+    private int numberPassengers;
+    private String hasCrew;
+    private int numberWheels;
+    private String dateEnrollment;
+    private String mediumWhereUsed;
+
+
+    public Vehicle(int numberPassengers, String hasCrew, int numberWheels, String dateEnrollment, String mediumWhereUsed) {
+        this.numberPassengers = numberPassengers;
+        this.hasCrew = hasCrew;
+        this.numberWheels = numberWheels;
+        this.dateEnrollment = dateEnrollment;
+        this.mediumWhereUsed = mediumWhereUsed;
+    }
+
+    public Vehicle() {
+    }
 
     public Vehicle(int numeroPasajeros) {
-        this.numeroDePasajeros = numeroPasajeros;
+        this.numberPassengers = numeroPasajeros;
     }
 
 
     @Override
     public String toString() {
         return "Vehicle{" +
-                "numeroDePasajeros=" + numeroDePasajeros +
-                ", hayTripulacion=" + hayTripulacion +
-                ", numeroRuedas=" + numeroRuedas +
-                ", fechaMatriclua='" + fechaMatriclua + '\'' +
-                ", medioDeDesplazamiento='" + medioDeDesplazamiento + '\'' +
+                "numberPassengers=" + numberPassengers +
+                ", hasCrew=" + hasCrew +
+                ", numberWheels=" + numberWheels +
+                ", dateEnrollment='" + dateEnrollment + '\'' +
+                ", mediumWhereUsed='" + mediumWhereUsed + '\'' +
                 '}';
     }
 
@@ -37,43 +52,49 @@ public class Vehicle {
         this.listVehicles = listVehicles;
     }
 
-    public int getNumeroDePasajeros() {
-        return numeroDePasajeros;
+    public int getnumberPassengers() {
+        return numberPassengers;
     }
 
-    public void setNumeroDePasajeros(int numeroDePasajeros) {
-        this.numeroDePasajeros = numeroDePasajeros;
+    public void setnumberPassengers(int numberPassengers) {
+        this.numberPassengers = numberPassengers;
     }
 
-    public boolean isHayTripulacion() {
-        return hayTripulacion;
+    public String ishasCrew() {
+        return hasCrew;
     }
 
-    public void setHayTripulacion(boolean hayTripulacion) {
-        this.hayTripulacion = hayTripulacion;
+    public void sethasCrew(String hasCrew) {
+        this.hasCrew = hasCrew;
     }
 
-    public int getNumeroRuedas() {
-        return numeroRuedas;
+
+    public int getnumberWheels() {
+        return numberWheels;
     }
 
-    public void setNumeroRuedas(int numeroRuedas) {
-        this.numeroRuedas = numeroRuedas;
+    public void setnumberWheels(int numberWheels) {
+        this.numberWheels = numberWheels;
     }
 
-    public String getFechaMatriclua() {
-        return fechaMatriclua;
+    public String getdateEnrollment() {
+        return dateEnrollment;
     }
 
-    public void setFechaMatriclua(String fechaMatriclua) {
-        this.fechaMatriclua = fechaMatriclua;
+    public void setdateEnrollment(String dateEnrollment) throws ParseException {
+        SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
+
+        Date dateEnrollmentParsed = format.parse(dateEnrollment);
+        String dateEnrollmentString = dateEnrollmentParsed.toString();
+
+        this.dateEnrollment = dateEnrollmentString;
     }
 
-    public String getMedioDeDesplazamiento() {
-        return medioDeDesplazamiento;
+    public String getmediumWhereUsed() {
+        return mediumWhereUsed;
     }
 
-    public void setMedioDeDesplazamiento(String medioDeDesplazamiento) {
-        this.medioDeDesplazamiento = medioDeDesplazamiento;
+    public void setmediumWhereUsed(String mediumWhereUsed) {
+        this.mediumWhereUsed = mediumWhereUsed;
     }
 }
